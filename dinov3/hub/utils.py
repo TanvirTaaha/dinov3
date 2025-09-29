@@ -2,8 +2,9 @@
 #
 # This software may be used and distributed in accordance with
 # the terms of the DINOv3 License Agreement.
+import os
 
-DINOV3_BASE_URL = "file:///mnt/storage1/workspace/taaha/yolo_training/CaptureDataProcess/models"
+DINOV3_BASE_URL = f"file://{os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))}/dinov3_model_weights"
 
 MODEL_URLS = {
     "dinov3_vits16_pretrain_lvd1689m-08c60483.pth": "https://dinov3.llamameta.net/dinov3_vits16/dinov3_vits16_pretrain_lvd1689m-08c60483.pth?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoiOGw3b3Y4aGUzMWQzZjc0YnljOGMzNWp0IiwiUmVzb3VyY2UiOiJodHRwczpcL1wvZGlub3YzLmxsYW1hbWV0YS5uZXRcLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NTkxODM0MDJ9fX1dfQ__&Signature=df0pMybodWNzEEUcbBkFBWhLuzw3RRbnHHM2xKYJ%7E9ohKSEdn19oTDlnI7R0Wdb%7ESPMgqhB0nJy1yCoBzmEHpOMrsmtfxXJufwGos2F3wHNzlY4WWvh7i8RzjJ0n-mDHx1F80h2l128LQLYk32uy%7E%7EFysHjhVvfNkP9rwXTvGx8pp0w4J8UY%7E-Cf32O-G3Dprgvptc7IGAJ9YsSmaQTVNa4tHN6NlSjn18ziapQWikTEwOvvzGprmHMTtaChtxqWkkt3yKamUjgLpJ0qNSYShf8l1rMoqRXUUsZdbk%7EGMnK0izzQgPNpbLJ5Pyh8cUTdTmtVvyB%7EPmhG1sD13iBWAw__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=781645261442874",
